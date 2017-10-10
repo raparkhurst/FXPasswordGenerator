@@ -13,8 +13,8 @@ public class PasswordManager {
     /**
      * scramble()
      *
-     * Method to scramble the generated password.  Found this on Stack Overflow but I think I closed
-     * the tab before I could get it documented.  If I can re-find it I'll update this.
+     * Method to scramble the generated password.  Found this from:
+     * https://stackoverflow.com/questions/3316674/how-to-shuffle-characters-in-a-string
      *
      */
     public static String scramble(Random random, String inputString ) {
