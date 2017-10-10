@@ -4,7 +4,7 @@
   <groupId>io.digitalsynapse</groupId>
   <artifactId>FXPasswordGenerator</artifactId>
   <name>FXPasswordGenerator</name>
-  <version>2.0</version>
+  <version>1.0</version>
   <developers>
     <developer>
       <id>Digital Synapse, LLC</id>
