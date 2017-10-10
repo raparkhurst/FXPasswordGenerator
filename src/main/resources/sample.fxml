@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.digitalsynapse.MainController">
+    <children>
+        <Label layoutX="192.0" layoutY="49.0" text="Password" />
+        <TextField fx:id="fx_GeneratedPassword" layoutX="98.0" layoutY="66.0" prefHeight="26.0" prefWidth="248.0" />
+        <Button fx:id="fx_copyButton" layoutX="355.0" layoutY="66.0" mnemonicParsing="false" onAction="#CopyPassword" text="Copy" />
+        <ProgressIndicator fx:id="fx_PasswordSecurityRankIndicator" layoutX="206.0" layoutY="300.0" progress="0.0" />
+        <Slider fx:id="fx_PasswordLenSlider" blockIncrement="1.0" layoutX="98.0" layoutY="126.0" majorTickUnit="5.0" max="40.0" min="10.0" minorTickCount="5" prefHeight="16.0" prefWidth="248.0" showTickMarks="true" snapToTicks="true" value="16.0" />
+        <Slider fx:id="fx_PasswordUpperCaseSlider" blockIncrement="1.0" layoutX="98.0" layoutY="174.0" majorTickUnit="1.0" max="8.0" minorTickCount="0" prefHeight="16.0" prefWidth="248.0" showTickMarks="true" snapToTicks="true" value="4.0" />
+        <Slider fx:id="fx_PasswordSpecialCaseSlider" blockIncrement="1.0" layoutX="98.0" layoutY="219.0" majorTickUnit="1.0" max="8.0" minorTickCount="0" prefHeight="16.0" prefWidth="248.0" showTickMarks="true" snapToTicks="true" value="2.0" />
+        <Label layoutX="420.0" layoutY="126.0" text="Character Length" />
+        <Label layoutX="420.0" layoutY="174.0" text="Upper Case" />
+        <TextField fx:id="fx_PasswordLenText" layoutX="355.0" layoutY="121.0" prefHeight="26.0" prefWidth="51.0" />
+        <TextField fx:id="fx_PasswordUpperCaseText" layoutX="355.0" layoutY="169.0" prefHeight="26.0" prefWidth="51.0" />
+        <TextField fx:id="fx_PasswordSpecialCaseText" layoutX="355.0" layoutY="214.0" prefHeight="26.0" prefWidth="51.0" />
+        <Label layoutX="420.0" layoutY="219.0" text="Special Case" />
+      <Slider fx:id="fx_PasswordNumbersSlider" blockIncrement="1.0" layoutX="98.0" layoutY="261.0" majorTickUnit="1.0" max="8.0" minorTickCount="0" prefHeight="16.0" prefWidth="248.0" showTickMarks="true" snapToTicks="true" value="4.0" />
+      <TextField fx:id="fx_PasswordNumbersText" layoutX="355.0" layoutY="256.0" prefHeight="26.0" prefWidth="51.0" />
+      <Label layoutX="420.0" layoutY="261.0" text="Numbers" />
+      <Button fx:id="fx_GenerateNewPasswordButton" layoutX="14.0" layoutY="66.0" mnemonicParsing="false" onAction="#GenerateNewPassword" text="Generate" />
+    </children>
+</AnchorPane>
